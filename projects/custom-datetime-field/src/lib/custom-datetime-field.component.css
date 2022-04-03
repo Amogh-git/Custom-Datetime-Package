@@ -1,0 +1,51 @@
+.datetime-container{
+   display:inline-flex;
+   position: relative;
+}
+.date-icon{
+    width:2rem !important;
+}
+.display-date{
+    margin-right: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    pointer-events: none !important;
+    width: 100%;
+}
+.hidden-datetime{
+    width: min-content;
+    z-index: 999;
+    position: absolute;
+    margin-right:0 !important;
+}
+.hidden-date-container{
+    position: absolute;
+}
+img{
+    vertical-align: -webkit-baseline-middle;
+    margin: 0 auto;
+}
+.image-wrapper{
+    height: 100%;
+    width:2.5em !important;
+    text-align: center;
+    background: #eeeeee;
+    align-items: center;
+    border-top-right-radius: 0.2em;
+    display:flex;
+    flex-direction: row;
+    border-bottom-right-radius: 0.2em;
+}
+
+.hidden-datetime::-webkit-inner-spin-button,
+.hidden-datetime::-webkit-calendar-picker-indicator {
+    /* display: none;
+    -webkit-appearance: none; */
+    margin:0;
+}
+.hidden-datetime::-webkit-datetime-edit {
+    display:none;
+}
+input{
+    box-sizing: border-box;
+}
